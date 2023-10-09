@@ -1,3 +1,5 @@
+import { List } from "components/Statistics/Statistics.styled";
+
 export const Statistics = ({
   good,
   neutral,
@@ -6,12 +8,12 @@ export const Statistics = ({
   positivePercentage,
 }) => {
   return (
-    <ul>
-      <li>Good: {good}</li>
+      <List>
+       <li>Good: {good}</li>
       <li>Neutral: {neutral}</li>
       <li>Bad: {bad}</li>
       <li>Total: {total}</li>
       <li>Positive feedback: {positivePercentage}%</li>
-    </ul>
+    </List>
   );
 };
